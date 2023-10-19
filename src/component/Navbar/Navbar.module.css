@@ -1,0 +1,16 @@
+.nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: lightblue;
+    margin: 5px;
+    color:red;
+    border:2px solid darkblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button{
+   
+}
