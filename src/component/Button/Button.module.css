@@ -1,0 +1,18 @@
+.feedbackbtn{
+    background-color: var(--color-black);
+    color:var(--color-primary);
+    width: 170px;
+    height: 47px;
+    top: 13px;
+    left: 1238px;
+    
+    padding: 10px, 16px;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    gap: 10px;
+    cursor: pointer;
+     }
+     .feedbackbtn:hover{
+        filter: brightness(130%);
+        transform: scale(1.01);
+     }
