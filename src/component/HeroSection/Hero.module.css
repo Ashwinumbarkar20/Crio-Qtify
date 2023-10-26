@@ -1,0 +1,23 @@
+.hero{
+    background-color: val(--color-black);
+    height:270px ;
+    top:74px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.subsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 212px;
+    width: 799px;
+    
+   
+}
+.headphonelogo{
+    margin:10px;
+    Width:212px;
+    Height:212px;
+}
