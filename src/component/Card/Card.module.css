@@ -1,0 +1,29 @@
+.mainCard{
+height: 232px;
+width: 159px;
+display: flex;
+flex-direction: column;
+align-items: start;
+}
+.followers{
+    align-items: center;
+    background-color: white;
+    height:35px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 6px;
+    padding: 6px;
+}
+.followers span{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding:4px 8px;
+    font-size: 10px;
+}
+.title{
+    padding: 6px;
+    font-size: 14px;
+    }
+    
