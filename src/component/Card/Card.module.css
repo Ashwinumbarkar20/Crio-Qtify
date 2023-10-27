@@ -1,9 +1,10 @@
 .mainCard{
-height: 232px;
+height: 280px;
 width: 159px;
 display: flex;
 flex-direction: column;
 align-items: start;
+
 }
 .followers{
     align-items: center;
@@ -25,5 +26,10 @@ align-items: start;
 .title{
     padding: 6px;
     font-size: 14px;
+    }
+
+    .image{
+width: 159px;
+height: 205px;
     }
     

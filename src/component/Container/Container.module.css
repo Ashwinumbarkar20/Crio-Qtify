@@ -1,0 +1,15 @@
+.containerTitle{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+color:#34C94B;
+}
+.cards{
+   display: flex;
+   gap:32px;
+flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
