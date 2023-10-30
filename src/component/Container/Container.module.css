@@ -5,6 +5,7 @@ justify-content: space-between;
 padding: 10px;
 color:#34C94B;
 }
+
 .cards{
    display: flex;
    gap:32px;
