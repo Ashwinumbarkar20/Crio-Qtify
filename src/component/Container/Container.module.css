@@ -2,7 +2,7 @@
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 20px;
+padding: 10px;
 color:#34C94B;
 }
 .cards{
@@ -10,6 +10,15 @@ color:#34C94B;
    gap:32px;
 flex-wrap: wrap;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
 }
+.carddiv{
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   ;
+}
+
+
