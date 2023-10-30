@@ -8,7 +8,9 @@ color:#34C94B;
 
 .cards{
    display: flex;
-   gap:32px;
+   row-gap: 32px;
+   column-gap: 32px;
+   
 flex-wrap: wrap;
    flex-direction: row;
    justify-content: space-between;
