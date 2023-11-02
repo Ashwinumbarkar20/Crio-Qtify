@@ -2,29 +2,36 @@ import './App.css'
 import Hero from './component/HeroSection/Hero'
 import Navbar from './component/Navbar/Navbar'
 import Card from './component/Card/Card'
-import Container from './component/Container/Container'
+
 import { useEffect, useState } from 'react'
+import {getTopAlbum} from "./Api/Api.js"
  
-
 function App() {
-  const[albumData,setalbumData]=useState([]);   
-
-const getAlbum=async ()=>{
-  let data=await fetch("https://qtify-backend-labs.crio.do/albums/top");
-  let album=await data.json();
-  setalbumData(album);
-  
+const[topAlbumData,setTopAlbumData]=useState([]);   
+const getTopAlbumData=async ()=>{
+  try{
+    const data=await getTopAlbum();
+      setTopAlbumData(data)
+    }
+  catch(e){
+    console.log(e);
+  }
+    
 }
-
   useEffect(()=>{
-    getAlbum();
+   getTopAlbumData();
   },[]);
 
   return (
     <>
    <Navbar></Navbar>
    <Hero/>
-    <Container albumData={albumData} />
+   {
+       topAlbumData.map((d)=> {
+      return(<Card key={Math.random*11} data={d} type="album"/>)
+      })
+   }
+   
     </>
   )
 }
