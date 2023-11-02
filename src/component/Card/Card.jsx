@@ -16,7 +16,7 @@ export default function Card({data,type}) {
   <div className={`${styles.mainDiv}`}>
   <div className={`${styles.cardDiv}`}>
       <div className={`${styles.imgDiv}`} ><img src={image} alt={title} /></div>
-      <div className={`${styles.chipDiv}`}><Chip label={`Follow ${follows}`} className={`${styles.chip}`} /></div>
+      <div className={`${styles.chipDiv}`}><Chip label={`Follow ${follows}`} className={`${styles.chipcomponent}`} /></div>
   </div>
   <div className={`${styles.title}`}>
     <p>{title}</p>
