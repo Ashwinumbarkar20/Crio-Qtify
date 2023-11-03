@@ -12,7 +12,7 @@ export default function Card({data,type}) {
     case "album":
         {
           return(
-  <Tooltip title={`${songs.length} Songs`} placement="top">
+  <Tooltip title={`${songs.length} Songs`} placement="top" arrow>
   <div className={`${styles.mainDiv}`}>
   <div className={`${styles.cardDiv}`}>
       <div className={`${styles.imgDiv}`} ><img src={image} alt={title} /></div>
