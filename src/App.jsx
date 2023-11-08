@@ -5,9 +5,11 @@ import Card from './component/Card/Card'
 
 import { useEffect, useState } from 'react'
 import {getTopAlbum} from "./Api/Api.js"
+import Section from './component/Section/Section.jsx'
  
 function App() {
 const[topAlbumData,setTopAlbumData]=useState([]);   
+
 const getTopAlbumData=async ()=>{
   try{
     const data=await getTopAlbum();
@@ -26,11 +28,8 @@ const getTopAlbumData=async ()=>{
     <>
    <Navbar></Navbar>
    <Hero/>
-   {
-       topAlbumData.map((d)=> {
-      return(<Card key={Math.random*11} data={d} type="album"/>)
-      })
-   }
+   <Section topAlbumData={topAlbumData} title={"Top Album"} type={"album"}/>
+    {/* <Section topAlbumData={topAlbumData}/> */}
    
     </>
   )

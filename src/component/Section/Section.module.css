@@ -1,0 +1,27 @@
+.section{
+    margin: 10px 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.viewAll{
+    color:#34C94B;
+    font-weight:bolder;
+    cursor: pointer;
+}
+
+.SectionTitle{
+    color: #ffffff;
+    font-weight:bolder;
+    
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}

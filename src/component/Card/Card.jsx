@@ -8,6 +8,7 @@ export default function Card({data,type}) {
   
   const getCard=(type)=>
    {
+    
     switch(type){
     case "album":
         {
