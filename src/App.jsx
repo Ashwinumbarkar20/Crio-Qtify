@@ -2,7 +2,6 @@ import './App.css'
 import Hero from './component/HeroSection/Hero'
 import Navbar from './component/Navbar/Navbar'
 import Card from './component/Card/Card'
-
 import { useEffect, useState } from 'react'
 import {getTopAlbum,getNewAlbum} from "./Api/Api.js"
 import Section from './component/Section/Section.jsx'
