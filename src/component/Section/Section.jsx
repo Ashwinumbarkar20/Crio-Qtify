@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import styles from './Section.module.css'
 import Card from '../Card/Card'
+import Carousel from '../Carousel/Carousel';
 export default function Section({topAlbumData,title,type}) {
- const[toggler,setToggler]=useState(false);
+ const[albumtoggler,setAlbumToggler]=useState(false);
  
  const handletoggler=()=>{
-setToggler(!toggler)
+   setAlbumToggler(!albumtoggler)
  }
     return (
    <>
@@ -14,14 +15,17 @@ setToggler(!toggler)
     <span className={`${styles.SectionTitle}`}>{title}</span>
     <span onClick={handletoggler}className={`${styles.viewAll}`}>View All</span>
    </div>
-   
-   {toggler?
+
+   {albumtoggler?
     <div className={`${styles.cards}`}>{
        topAlbumData.map((d)=> {
         return(<Card key={Math.random*11} data={d} type={type}/>)
       })
    } </div>
-   :<>Corosol</>
+   :<>
+   <Carousel topAlbumData={topAlbumData} type={type}/>
+
+   </>
    }
   
      
