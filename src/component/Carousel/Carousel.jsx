@@ -4,7 +4,7 @@ export default function Carousel({topAlbumData,type}) {
     
       var swiper = new Swiper(".mySwiper", {
        
-        slidesPerView: 6,
+        slidesPerView: 8,
         spaceBetween: 10,
         speed:500,
         navigation: {
@@ -25,15 +25,7 @@ export default function Carousel({topAlbumData,type}) {
 
       )})
     }
-      {/* <div className="swiper-slide">Slide 1</div>
-      <div className="swiper-slide">Slide 2</div>
-      <div className="swiper-slide">Slide 3</div>
-      <div className="swiper-slide">Slide 4</div>
-      <div className="swiper-slide">Slide 5</div>
-      <div className="swiper-slide">Slide 6</div>
-      <div className="swiper-slide">Slide 7</div>
-      <div className="swiper-slide">Slide 8</div>
-      <div className="swiper-slide">Slide 9</div> */}
+      
     </div>
     <div className="swiper-button-next"></div>
     <div className="swiper-button-prev"></div>

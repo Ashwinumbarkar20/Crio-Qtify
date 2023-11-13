@@ -21,3 +21,23 @@ export const getNewAlbum=async ()=>{
         console.error(e)
     }
     }
+
+    export const getSongs=async ()=>{
+        try{
+            const res =await axios.get(`${API_ENDPOINT}/songs`)
+            return (res.data)
+        }
+        catch(e){
+            console.log(e)
+        }
+    }
+
+    export const getGenre= async()=>{
+        try{
+            const res= await axios.get(`${API_ENDPOINT}/genres`)
+            return(res.data)
+        }
+        catch(e){
+            console.log(e)
+        }
+    }
