@@ -1,0 +1,9 @@
+.mainFAQ{
+    display: flex;
+    background-color: val(var(--color-black));
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 15px;
+}

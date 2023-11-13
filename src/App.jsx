@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import {getTopAlbum,getNewAlbum,getSongs,getGenre} from "./Api/Api.js"
 import Section from './component/Section/Section.jsx'
 import Filter from './component/Filtersection/Filter.jsx'
+import FAQ from './component/FAQ/FAQ.jsx'
  
 function App() {
 const[topAlbumData,setTopAlbumData]=useState([]);   
@@ -72,6 +73,7 @@ console.log(Genre)
     {/* <Section topAlbumData={topAlbumData}/> */}
     <Filter data={songsData} Genre={Genre} title="Songs"></Filter>
     {/* <Section Data={songsData} title={"Songs"} type={"songs"}/> */}
+    <FAQ/>
     </>
   )
 }
