@@ -1,0 +1,43 @@
+.mainitemdiv{
+    height:80px;
+    width: 600px;
+    
+    display: flex;  
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #121212;
+    color: #ffffff;
+     z-index: 1100;
+     cursor: pointer;
+}
+.content{
+    height: 100%;
+    width:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-radius: none;
+    
+}
+
+.totalSongs{
+    text-align: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.aimage{
+    padding: 2px;;
+    height: 80px;
+    width: 150px;
+   
+    overflow: hidden;
+}
+.aimage img{
+    border-radius: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}

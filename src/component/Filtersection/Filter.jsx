@@ -7,10 +7,10 @@ import Filtertabs from '../Filtertabs/Filtertabs';
 export default function Filter({data,Genre,title}) {
   const Allgenre=Genre.map((g)=>{return(g.label)})
   const[value,setValue]=useState(0);
-  const filtered=data.filter((song) => song)
-  console.log("All genre ",Allgenre)
+  
+
   const handleChange=(e,newvalue)=>{
-    console.log(e)
+    
         setValue(newvalue)
     }
   

@@ -66,7 +66,7 @@ console.log(Genre)
 
   return (
     <>
-   <Navbar></Navbar>
+   <Navbar data={[...topAlbumData,...newAlbumData]}></Navbar>
    <Hero/>
    <Section Data={topAlbumData} title={"Top Album"} type={"album"}/>
    <Section Data={newAlbumData} title={"New Album"} type={"album"}/>

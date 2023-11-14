@@ -32,3 +32,9 @@ height: 20px;
 margin: 14px 15px;
 
 }
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
