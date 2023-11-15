@@ -1,6 +1,14 @@
-.menudiv{z-index:1;
-    width: 610px;;
-  overflow-y: auto;
-  max-height: 400px;
+.menudiv{
+  position: relative;
+ 
   
+}
+.menucontainer{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index:1;
+  width: 615px;;
+  overflow-y: auto;
+  max-height: 300px;
 }

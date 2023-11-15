@@ -20,7 +20,7 @@ export default function Search({data}) {
             <img src={Searchicon1} alt=" Search icon" className={`${styles.slogo}`}/>
             </button>
         </form>
-        {search&&<Menu data={data}></Menu>}
+        {search&&<Menu data={data.filter(item =>item.title.toLowerCase().includes(search.toLowerCase()))}></Menu>}
         </div>
     </>
   )
